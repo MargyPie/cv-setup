@@ -19,7 +19,7 @@ h4 {
 .header {
   padding: 48px 16px;
   text-align: center;
-  background-color: #eee;
+  background-color: rgba(238, 238, 238, 0.733);
 }
 
 .main {
@@ -27,4 +27,36 @@ h4 {
   /* If the screen is too wide, the content gets hard to read. This centers it using the margin.*/
   max-width: 800px;
   margin: 0 auto;
+}
+
+/*** Spacing between articles & border above ***/
+.main > * + * {
+  margin-top: 50px;
+}
+
+.main > * + * {
+  border-top: solid #aaa;
+}
+
+.main > *:first-child {
+  border-top: none;
+}
+
+/*** Navigation bar ***/
+.navbar {
+  padding: 5px 10px;
+  color: dodgerblue;
+}
+
+.navbar:hover {
+  color: limegreen;
+}
+
+.navbar:active {
+  color: hotpink;
+}
+
+/*** Spaces between navigation ***/
+.navbar + .navbar {
+  margin-left: 30px;
 }
