@@ -60,3 +60,12 @@ h4 {
 .navbar + .navbar {
   margin-left: 30px;
 }
+
+::selection {
+  background-color: black;
+  color: antiquewhite;
+}
+
+#Profile > h2::after {
+  content: " 😋";
+}
