@@ -1,4 +1,4 @@
-* {
+html {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
@@ -66,6 +66,14 @@ h4 {
   color: antiquewhite;
 }
 
-#Profile > h2::after {
+.job::after {
   content: " 😋";
+}
+
+.experience-heading {
+  display: inline-block;
+}
+
+.experience-heading {
+  display: inline-block;
 }
