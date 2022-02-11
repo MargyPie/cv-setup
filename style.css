@@ -18,30 +18,40 @@ h4 {
 
 .header {
   padding: 48px 16px;
+  top: 50px;
   text-align: center;
   background-color: rgba(238, 238, 238, 0.733);
+  position: relative;
 }
 
 .main {
-  padding: 16px;
+  padding: 0 16px;
   /* If the screen is too wide, the content gets hard to read. This centers it using the margin.*/
   max-width: 800px;
   margin: 0 auto;
 }
 
-/*** Spacing between articles & border above ***/
-.main > * + * {
-  margin-top: 50px;
+/*** Spacing between articles, border above & padding to left side ***/
+.main > * {
+  padding-left: 20px;
 }
 
 .main > * + * {
+  margin-top: 50px;
   border-top: solid #aaa;
 }
 
 .main > *:first-child {
   border-top: none;
+  padding-left: 20px;
 }
 
+.main-headings {
+  position: relative;
+  left: -20px;
+}
+
+/******************* Header *******************/
 /*** Navigation bar ***/
 .navbar {
   padding: 5px 10px;
@@ -76,4 +86,11 @@ h4 {
 
 .experience-heading {
   display: inline-block;
+}
+
+/**** Hire me button ****/
+.hire-me-button {
+  position: absolute;
+  right: 0px;
+  top: 0px;
 }
