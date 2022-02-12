@@ -1,10 +1,11 @@
 html {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 
 body {
-  margin: 0px;
+  margin: 0;
 }
 
 h1,
@@ -17,44 +18,56 @@ h4 {
 /************ Specific Stylings ************/
 
 .header {
-  padding: 48px 16px;
-  top: 50px;
+  padding: 3rem 1rem;
+  top: 3.5px;
   text-align: center;
   background-color: rgba(238, 238, 238, 0.733);
   position: relative;
 }
 
+.heading-group {
+  font-size: 4rem;
+}
+
+.heading-title {
+  font-size: 1em;
+}
+
+.job {
+  font-size: 0.25em;
+}
+
 .main {
-  padding: 0 16px;
+  padding: 0 1rem;
   /* If the screen is too wide, the content gets hard to read. This centers it using the margin.*/
-  max-width: 800px;
+  max-width: 70ch;
   margin: 0 auto;
 }
 
 /*** Spacing between articles, border above & padding to left side ***/
 .main > * {
-  padding-left: 20px;
+  padding-left: 1rem;
 }
 
 .main > * + * {
-  margin-top: 50px;
+  margin-top: 3rem;
   border-top: solid #aaa;
 }
 
 .main > *:first-child {
   border-top: none;
-  padding-left: 20px;
+  padding-left: 1rem;
 }
 
 .main-headings {
   position: relative;
-  left: -20px;
+  left: -1rem;
 }
 
 /******************* Header *******************/
 /*** Navigation bar ***/
 .navbar {
-  padding: 5px 10px;
+  padding: 0.25rem 0.5rem;
   color: dodgerblue;
 }
 
@@ -68,7 +81,7 @@ h4 {
 
 /*** Spaces between navigation ***/
 .navbar + .navbar {
-  margin-left: 30px;
+  margin-left: 2rem;
 }
 
 ::selection {
@@ -91,11 +104,11 @@ h4 {
 /**** Hire me button ****/
 .hire-me-button {
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 1rem;
+  top: 1rem;
   color: white;
   background-color: teal;
-  padding: 5px;
+  padding: 0.4rem;
   opacity: 0.9;
-  border-radius: 5px;
+  border-radius: 0.4rem;
 }
