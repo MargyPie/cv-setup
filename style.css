@@ -68,7 +68,7 @@ h4 {
 
 .main > *:first-child {
   border-top: none;
-  padding-left: 1rem;
+  _padding-left: 1rem;
 }
 
 .main-headings {
@@ -78,9 +78,31 @@ h4 {
 
 /******************* Header *******************/
 /*** Navigation bar ***/
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid black;
+}
+
+/*** Starting with the medium breakpoint (768px) display the navigations links horizontally
+***/
+@media screen and (min-width: 768px) {
+  .navigation {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /*** Spaces between navigation ***/
+  .navbar + .navbar {
+    margin-left: 2rem;
+  }
+}
+
 .navbar {
   padding: 0.25rem 0.5rem;
   color: dodgerblue;
+  border: 2px dashed hotpink;
 }
 
 .navbar:hover {
@@ -89,11 +111,6 @@ h4 {
 
 .navbar:active {
   color: hotpink;
-}
-
-/*** Spaces between navigation ***/
-.navbar + .navbar {
-  margin-left: 2rem;
 }
 
 ::selection {
