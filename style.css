@@ -82,11 +82,9 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 5px solid black;
 }
 
-/*** Starting with the medium breakpoint (768px) display the navigations links horizontally
-***/
+/*** From medium breakpoint on, nav links are horizontally ***/
 @media screen and (min-width: 768px) {
   .navigation {
     flex-direction: row;
@@ -102,7 +100,6 @@ h4 {
 .navbar {
   padding: 0.25rem 0.5rem;
   color: dodgerblue;
-  border: 2px dashed hotpink;
 }
 
 .navbar:hover {
@@ -122,12 +119,21 @@ h4 {
   content: " 😋";
 }
 
-.experience-heading {
-  display: inline-block;
+/***** Job Experience Flexbox ******/
+/* Display job title & time span vertically by default */
+.experience-flexbox {
+  display: flex;
+  flex-direction: column;
 }
 
-.experience-heading {
-  display: inline-block;
+/* From medium breakpoint on: display job title time span horizontally */
+@media screen and (min-width: 768px) {
+  .experience-flexbox {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
 
 /**** Hire me button ****/
