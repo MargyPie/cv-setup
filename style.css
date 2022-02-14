@@ -18,6 +18,19 @@ html {
 
 body {
   margin: 0;
+  --page-background-color: white;
+  --page-text-color: black;
+  --theme-color: rgba(12, 193, 181, 1);
+  --accent-color: teal;
+  --selection-color: hotpink;
+}
+
+/*** Dark scheme turns colors around ***/
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    --page-background-color: black;
+    --page-text-color: white;
+  }
 }
 
 h1,
@@ -70,7 +83,7 @@ h4 {
 /*** Lines between articles ***/
 .main > * + * {
   margin-top: 3rem;
-  border-top: solid rgba(12, 193, 181, 1);
+  border-top: solid var(--theme-color);
 }
 
 .main > *:first-child {
@@ -106,15 +119,15 @@ h4 {
 
 .navbar {
   padding: 0.25rem 0.5rem;
-  color: rgba(12, 193, 181, 1);
+  color: var(--theme-color);
 }
 
 .navbar:hover {
-  color: teal;
+  color: var(--accent-color);
 }
 
 .navbar:active {
-  color: hotpink;
+  color: var(--selection-color);
 }
 
 ::selection {
@@ -145,14 +158,14 @@ h4 {
 
 /************************ Contact **********************/
 .contact-link {
-  color: rgba(12, 193, 181, 1);
+  color: var(--theme-color);
 }
 .contact-link:hover {
-  color: teal;
+  color: var(--accent-color);
 }
 
 .contact-link:active {
-  color: hotpink;
+  color: var(--selection-color);
 }
 
 /**** Hire me button ****/
@@ -161,7 +174,7 @@ h4 {
   right: 1rem;
   top: 1rem;
   color: white;
-  background-color: rgba(12, 193, 181, 1);
+  background-color: var(--theme-color);
   padding: 0.4rem;
   opacity: 0.9;
   border-radius: 0.4rem;
