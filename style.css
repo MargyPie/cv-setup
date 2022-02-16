@@ -120,6 +120,7 @@ h4 {
 .navbar {
   padding: 0.25rem 0.5rem;
   color: var(--theme-color);
+  transition: color 1s;
 }
 
 .navbar:hover {
@@ -159,6 +160,7 @@ h4 {
 /************************ Contact **********************/
 .contact-link {
   color: var(--theme-color);
+  transition: color 1s;
 }
 .contact-link:hover {
   color: var(--accent-color);
@@ -174,10 +176,10 @@ h4 {
   right: 1rem;
   top: 1rem;
   color: white;
-  background-color: var(--theme-color);
   padding: 0.4rem;
   opacity: 0.9;
   border-radius: 0.4rem;
+  background-color: var(--theme-color);
 }
 
 /******** Media behavior & breakpoints for screen and printer **********/
