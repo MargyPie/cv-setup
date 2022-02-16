@@ -127,6 +127,12 @@ h4 {
   color: var(--accent-color);
 }
 
+/*.navbar:focus {
+  outline-color: var(--selection-color);
+  outline-style: dotted;
+}
+*/
+
 .navbar:active {
   color: var(--selection-color);
 }
@@ -160,7 +166,7 @@ h4 {
 /************************ Contact **********************/
 .contact-link {
   color: var(--theme-color);
-  transition: color 1s;
+  transition: color 0.5s ease-in-out;
 }
 .contact-link:hover {
   color: var(--accent-color);
@@ -177,9 +183,20 @@ h4 {
   top: 1rem;
   color: white;
   padding: 0.4rem;
-  opacity: 0.9;
+  opacity: 0.7;
   border-radius: 0.4rem;
   background-color: var(--theme-color);
+  transform-origin: top right;
+  transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
+}
+
+.hire-me-button:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.hire-me-button:active {
+  transform: scale(1);
 }
 
 /******** Media behavior & breakpoints for screen and printer **********/
